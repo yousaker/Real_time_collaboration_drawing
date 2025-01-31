@@ -1,6 +1,8 @@
+import { ClerkProvider } from '@clerk/nextjs'; // استيراد ClerkProvider
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";  // قد يحتوي على بعض Providers الأخرى أيضًا
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,12 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Providers>{children}</Providers> {/* هنا يمكن أن تحتوي Providers على مكونات أخرى */}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
