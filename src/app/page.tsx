@@ -1,4 +1,5 @@
-// page.tsx
+import ClientCanvas from "@/components/canvas/ClientCanvas";
+
 export default function Home() {
   return (
     <div className="text-center">
@@ -8,6 +9,7 @@ export default function Home() {
       <p className="text-xl text-gray-300 mb-12">
         Découvrez une expérience unique et moderne
       </p>
+      <ClientCanvas />
     </div>
   );
 }

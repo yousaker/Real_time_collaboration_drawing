@@ -2,6 +2,7 @@
 "use client"; // Ajoutez cette ligne en haut du fichier
 
 import { SignInButton, SignUpButton, UserButton, useUser } from '@clerk/nextjs';
+import './globals.css';
 
 const Navbar = () => {
   const { isSignedIn } = useUser();

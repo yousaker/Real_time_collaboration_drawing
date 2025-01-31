@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.10.4",
+    "fabric": "^6.5.4",
+    "konva": "^9.3.18",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-konva": "^19.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/fabric": "^5.3.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

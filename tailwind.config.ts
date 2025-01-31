@@ -6,7 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  
+
   theme: {
     extend: {
       colors: {
@@ -28,6 +28,8 @@ export default {
         teal: {
           600: '#0d9488',
         },
+       
+        'canvas-bg': '#f0f0f0',
       },
     },
   },
