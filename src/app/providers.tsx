@@ -1,4 +1,3 @@
-'use client';
 import { ClerkProvider } from '@clerk/nextjs';
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -6,7 +5,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <ClerkProvider
       appearance={{
         variables: {
-          colorPrimary: '#000000', // لون رئيسي
+          colorPrimary: '#FF5733', // Orange vif
+          colorBackground: '#F3F4F6', // Fond gris clair
+          // Texte sombre
         },
       }}
     >
