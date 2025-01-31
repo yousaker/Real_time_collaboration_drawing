@@ -5,7 +5,7 @@ export default function Home() {
       <div>
         <h1>Welcome to Next.js!</h1>
         <SignInButton />
-        <UserButton afterSignOutUrl="/" />
+        <UserButton  />
       </div>
     );
   }
